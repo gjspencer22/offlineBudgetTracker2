@@ -18,7 +18,7 @@
 // })
 
 module.exports = {
-  entry: '../server.js',
+  entry: './public/js/index.js',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js'

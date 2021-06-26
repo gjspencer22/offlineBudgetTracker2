@@ -55,5 +55,24 @@ function uploadTransaction() {
     }
 }
 
+//db.js
+
+const mongoose = require('mongoose')
+
+const url = `mongodb+srv://sample_user:<Ut3zRule!>@my-sample-cluster-b3ugy.mongodb.net/<offlinebudget>?retryWrites=true&w=majority`;
+
+const connectionParams={
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true 
+}
+mongoose.connect(url,connectionParams)
+    .then( () => {
+        console.log('Connected to database ')
+    })
+    .catch( (err) => {
+        console.error(`Error connecting to the database. \n${err}`);
+    })
+
 
 window.addEventListener('online', uploadTransaction);

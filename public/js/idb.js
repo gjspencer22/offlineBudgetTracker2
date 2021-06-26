@@ -59,7 +59,7 @@ function uploadTransaction() {
 
 const mongoose = require('mongoose')
 
-const url = `mongodb+srv://gj22:<password>@cluster0.etxrj.mongodb.net/idb.js?retryWrites=true&w=majority`;
+const url = `mongodb+srv://sample_user:<password>@my-sample-cluster-b3ugy.mongodb.net/<dbname>?retryWrites=true&w=majority`;
 
 const connectionParams={
     useNewUrlParser: true,
